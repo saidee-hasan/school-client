@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.notice {
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+  background-color: rgb(211, 243, 208);
+}
+.notice a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.notice a:hover {
+  color: green;
+}
+.container-header {
+  background-color: bisque;
+  text-align: center;
+}
+
+.logo {
+  margin-right: 900px;
+  position: absolute;
+  margin-left: 20px;
+}
+.link Link {
+  text-decoration: none;
+}
+
+/* Large phone */
+@media only screen and (max-width: 48em) {
+  .container-header h3,
+  h5,
+  h6 {
+    font-size: 15px;
+  }
+  .logo {
+    margin-right: 900px;
+    position: absolute;
+    margin-left: 10px;
+  }
+  .logo img {
+    width: 40px;
+  }
+}
