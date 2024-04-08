@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  width: auto;
 }
 
 .notice {
@@ -21,6 +22,7 @@
 .container-header {
   background-color: bisque;
   text-align: center;
+  margin-top: 40px;
 }
 
 .logo {
@@ -37,14 +39,14 @@
   .container-header h3,
   h5,
   h6 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .logo {
     margin-right: 900px;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 3px;
   }
   .logo img {
-    width: 40px;
+    width: 55px;
   }
 }

@@ -1,27 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 .twin-container {
   display: flex;
   margin-left: 10px;
+  padding: 30px;
 }
 .slide-container {
   width: 60%;
-  margin-left: 20px;
+
   margin-right: 5px;
-  border-right: 1px solid grey;
 }
-.notice-container {
-  border-left: 1px solid black;
-  margin-left: 30px;
- 
-}
+
 .each-slide-effect > div {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 600px;
+  height: 450px;
 }
 
 .each-slide-effect span {
@@ -30,26 +28,186 @@
   position: absolute;
 }
 .box {
-  border: 1px solid black;
   width: 30%;
-  margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 0px;
   box-shadow: 5px 5px 5px grey;
   border-radius: 8px;
-  margin-left: 100;
+  margin-left: 30px;
+  height: 400px;
 }
-.box a{
+.box a {
   text-decoration: none;
   font-weight: 900;
   font-size: 20px;
 }
-.box h2 {
-  text-align: center;
-  background-color: rgb(247, 89, 10);
-  border: none;
+
+.school-introduction {
+  margin-top: 15px;
+  border-radius: 7px;
+  box-shadow: 10px 10px 10px grey;
+  padding: 0px;
+}
+
+.school-introduction span {
+  font-size: 20px;
+  padding: 12px;
+}
+.all-contact {
+  display: flex;
+  margin-left: 0px;
+  padding: 0;
+  margin-right: 20px;
+}
+.contact {
+  width: 50%;
+  float: left;
+}
+.contact img {
+  width: 180px;
+}
+.row {
+  float: left;
+  width: 60%;
   border-radius: 5px;
 
+  margin-left: 0px;
+  margin-top: 20px;
 }
+
+.row h5 {
+  text-align: center;
+  font-weight: 400;
+}
+.school-link {
+  margin-top: 70px;
+  border-radius: 5px;
+}
+
+.card-container {
+  width: 300px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+.img-card {
+  width: 200px;
+}
+.slider-container {
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+  margin-left: 100px;
+}
+.slider-container {
+  margin-top: 10px;
+}
+.slider-container h1 {
+  text-align: center;
+}
+
+/* Home */
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+.footer {
+  position: absolute;
+  margin-top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1280px;
+  width: 95%;
+  
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+  background-color: rgb(0, 0, 0);
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 90%;
+  outline: none;
+  border: 1px solid #7489c6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+.footer-col form button {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+  color: #fff;
+}
+
 @media only screen and (max-width: 48rem) {
   .twin-container {
     display: inline;
@@ -57,8 +215,8 @@
     width: 100%;
   }
   .slide-container {
-  width: 90%;
-    margin-left: 20px;
+    width: 90%;
+    margin-left: 30px;
     margin-right: 5px;
     border-right: 1px solid grey;
   }
@@ -66,35 +224,93 @@
     border-left: 1px solid black;
     margin-left: 30px;
   }
+
   .each-slide-effect > div {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 350px;
+    height: 270px;
   }
-  
+
   .each-slide-effect span {
     display: none;
     z-index: -1;
     position: absolute;
   }
+  .slider-container {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .img-card {
+    width: 250px;
+  }
   .box {
     border: 1px solid black;
-    width: 90%;
+    width: 91%;
     margin-left: 15px;
     margin-top: 20px;
     box-shadow: 5px 5px 5px grey;
     border-radius: 8px;
-    margin-left: 100;
-  
+    margin-left: 15px;
+    height: 350px;
   }
-  
-  .box h2 {
-    text-align: center;
-    background-color: rgb(247, 89, 10);
-    border: 1px solid black;
+
+  .school-introduction {
+    border: 1px solid rgb(27, 25, 25);
+    margin-top: 10px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px grey;
+  }
+  .all-contact {
+    display: inline;
+    margin-left: 0px;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .contact {
+    width: 50%;
+    float: left;
+  }
+  .row {
+    float: left;
+    width: 90%;
     border-radius: 5px;
+
+    margin-left: 12px;
+    margin-top: 20px;
   }
 
+  .row h5 {
+    text-align: center;
+    font-weight: 400;
+  }
+  .footer {
+    position: relative;
+  
+    left: 20px;
+    height: 20%;
+ 
+    transform: none;
+    width: 90%;
+    border-radius: 0;
+  }
 
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 90%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
 }

@@ -28,8 +28,7 @@ function Header() {
         <Navbar
           key={expand}
           expand={expand}
-        
-          className=" sticky-top  navbar navbar-dark bg-dark  mb-3"
+          className=" fixed-top  navbar navbar-dark bg-dark  mb-3"
         >
           <Container fluid>
             <Navbar.Brand href="#">Navbar</Navbar.Brand>
@@ -46,8 +45,9 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Nav.Link herf="/ad">Home</Nav.Link>
-                  <Nav.Link href="/home">Link</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/ad">Link</Nav.Link>
+
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -98,7 +98,6 @@ function Header() {
           চিথুলিয়া দিগর মুহিয়ে সুন্নাহ আলিম মাদ্রাসা ওয়েবসাইটে আপনাকে স্বাগতম!{" "}
         </a>
       </marquee>
-      <Home/>
     </div>
   );
 }
